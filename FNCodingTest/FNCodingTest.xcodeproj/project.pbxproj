@@ -30,6 +30,21 @@
 		6E0EC30D27E97E410037F574 /* VehicleModle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0EC30C27E97E410037F574 /* VehicleModle.swift */; };
 		6E0EC30E27E97E410037F574 /* VehicleModle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0EC30C27E97E410037F574 /* VehicleModle.swift */; };
 		6E0EC30F27E97E410037F574 /* VehicleModle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0EC30C27E97E410037F574 /* VehicleModle.swift */; };
+		6E74155927E984A100C1C096 /* FNNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E74155827E984A100C1C096 /* FNNavigator.swift */; };
+		6E74155A27E984A100C1C096 /* FNNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E74155827E984A100C1C096 /* FNNavigator.swift */; };
+		6E74155B27E984A100C1C096 /* FNNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E74155827E984A100C1C096 /* FNNavigator.swift */; };
+		6ED3CF8C27E9A5E900832A01 /* VehicleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED3CF8B27E9A5E900832A01 /* VehicleListViewModel.swift */; };
+		6ED3CF8D27E9A5E900832A01 /* VehicleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED3CF8B27E9A5E900832A01 /* VehicleListViewModel.swift */; };
+		6ED3CF8E27E9A5E900832A01 /* VehicleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED3CF8B27E9A5E900832A01 /* VehicleListViewModel.swift */; };
+		6ED3CF9427E9A64800832A01 /* VehiclesListServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED3CF9327E9A64800832A01 /* VehiclesListServices.swift */; };
+		6ED3CF9527E9A64800832A01 /* VehiclesListServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED3CF9327E9A64800832A01 /* VehiclesListServices.swift */; };
+		6ED3CF9627E9A64800832A01 /* VehiclesListServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED3CF9327E9A64800832A01 /* VehiclesListServices.swift */; };
+		6ED3CFA027E9B1A400832A01 /* GenericCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED3CF9E27E9B1A400832A01 /* GenericCodable.swift */; };
+		6ED3CFA127E9B1A400832A01 /* GenericCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED3CF9E27E9B1A400832A01 /* GenericCodable.swift */; };
+		6ED3CFA227E9B1A400832A01 /* GenericCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED3CF9E27E9B1A400832A01 /* GenericCodable.swift */; };
+		6ED3CFA327E9B1A400832A01 /* Generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED3CF9F27E9B1A400832A01 /* Generic.swift */; };
+		6ED3CFA427E9B1A400832A01 /* Generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED3CF9F27E9B1A400832A01 /* Generic.swift */; };
+		6ED3CFA527E9B1A400832A01 /* Generic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED3CF9F27E9B1A400832A01 /* Generic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +85,11 @@
 		6E0EC2F827E97AD30037F574 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		6E0EC30527E97D4A0037F574 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		6E0EC30C27E97E410037F574 /* VehicleModle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleModle.swift; sourceTree = "<group>"; };
+		6E74155827E984A100C1C096 /* FNNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNNavigator.swift; sourceTree = "<group>"; };
+		6ED3CF8B27E9A5E900832A01 /* VehicleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListViewModel.swift; sourceTree = "<group>"; };
+		6ED3CF9327E9A64800832A01 /* VehiclesListServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesListServices.swift; sourceTree = "<group>"; };
+		6ED3CF9E27E9B1A400832A01 /* GenericCodable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericCodable.swift; sourceTree = "<group>"; };
+		6ED3CF9F27E9B1A400832A01 /* Generic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +141,7 @@
 		6E0EC27B27E96B1F0037F574 /* FNCodingTest */ = {
 			isa = PBXGroup;
 			children = (
+				6E74155727E9848500C1C096 /* Utility */,
 				6E0EC2ED27E97A880037F574 /* Network */,
 				6E0EC2B227E96E270037F574 /* Extentions */,
 				6E0EC2B127E96E0D0037F574 /* Modules */,
@@ -171,6 +192,7 @@
 		6E0EC2B127E96E0D0037F574 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				6ED3CF9227E9A63100832A01 /* Services */,
 				6E0EC2CB27E972640037F574 /* Map */,
 				6E0EC2BE27E9716F0037F574 /* Vehicles */,
 			);
@@ -199,6 +221,7 @@
 			children = (
 				6E0EC2C027E9720E0037F574 /* VehiclesListViewController.swift */,
 				6E0EC30C27E97E410037F574 /* VehicleModle.swift */,
+				6ED3CF8B27E9A5E900832A01 /* VehicleListViewModel.swift */,
 			);
 			path = VehiclesList;
 			sourceTree = "<group>";
@@ -218,6 +241,32 @@
 				6E0EC30527E97D4A0037F574 /* Environment.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		6E74155727E9848500C1C096 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				6ED3CF9D27E9B1A400832A01 /* Generic Codables */,
+				6E74155827E984A100C1C096 /* FNNavigator.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		6ED3CF9227E9A63100832A01 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6ED3CF9327E9A64800832A01 /* VehiclesListServices.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		6ED3CF9D27E9B1A400832A01 /* Generic Codables */ = {
+			isa = PBXGroup;
+			children = (
+				6ED3CF9E27E9B1A400832A01 /* GenericCodable.swift */,
+				6ED3CF9F27E9B1A400832A01 /* Generic.swift */,
+			);
+			path = "Generic Codables";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -360,11 +409,16 @@
 				6E0EC30627E97D4A0037F574 /* Environment.swift in Sources */,
 				6E0EC2E927E9761E0037F574 /* UIStoryboard+Extention.swift in Sources */,
 				6E0EC2B427E9704D0037F574 /* FNAppDelegate.swift in Sources */,
+				6ED3CF9427E9A64800832A01 /* VehiclesListServices.swift in Sources */,
 				6E0EC2F927E97AD30037F574 /* Router.swift in Sources */,
+				6ED3CF8C27E9A5E900832A01 /* VehicleListViewModel.swift in Sources */,
 				6E0EC2C127E9720E0037F574 /* VehiclesListViewController.swift in Sources */,
 				6E0EC2CD27E973550037F574 /* FNApplication.swift in Sources */,
+				6ED3CFA327E9B1A400832A01 /* Generic.swift in Sources */,
 				6E0EC27F27E96B1F0037F574 /* SceneDelegate.swift in Sources */,
 				6E0EC30D27E97E410037F574 /* VehicleModle.swift in Sources */,
+				6E74155927E984A100C1C096 /* FNNavigator.swift in Sources */,
+				6ED3CFA027E9B1A400832A01 /* GenericCodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,10 +426,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED3CF9527E9A64800832A01 /* VehiclesListServices.swift in Sources */,
 				6E0EC2F027E97AB30037F574 /* WebService.swift in Sources */,
 				6E0EC30727E97D4A0037F574 /* Environment.swift in Sources */,
 				6E0EC2FA27E97AD30037F574 /* Router.swift in Sources */,
+				6E74155A27E984A100C1C096 /* FNNavigator.swift in Sources */,
+				6ED3CFA427E9B1A400832A01 /* Generic.swift in Sources */,
+				6ED3CF8D27E9A5E900832A01 /* VehicleListViewModel.swift in Sources */,
 				6E0EC30E27E97E410037F574 /* VehicleModle.swift in Sources */,
+				6ED3CFA127E9B1A400832A01 /* GenericCodable.swift in Sources */,
 				6E0EC29427E96B200037F574 /* FNCodingTestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,10 +443,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6ED3CF9627E9A64800832A01 /* VehiclesListServices.swift in Sources */,
 				6E0EC2F127E97AB30037F574 /* WebService.swift in Sources */,
 				6E0EC30827E97D4A0037F574 /* Environment.swift in Sources */,
 				6E0EC2FB27E97AD30037F574 /* Router.swift in Sources */,
+				6E74155B27E984A100C1C096 /* FNNavigator.swift in Sources */,
+				6ED3CFA527E9B1A400832A01 /* Generic.swift in Sources */,
+				6ED3CF8E27E9A5E900832A01 /* VehicleListViewModel.swift in Sources */,
 				6E0EC30F27E97E410037F574 /* VehicleModle.swift in Sources */,
+				6ED3CFA227E9B1A400832A01 /* GenericCodable.swift in Sources */,
 				6E0EC29F27E96B200037F574 /* FNCodingTestUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

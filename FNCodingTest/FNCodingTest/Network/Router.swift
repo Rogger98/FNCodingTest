@@ -14,6 +14,8 @@ protocol APIRouter {
 }
 
 
+// All Web services will be added
+
 enum Router : APIRouter {
     case getVehicles(p1: Location, p2: Location)
 }

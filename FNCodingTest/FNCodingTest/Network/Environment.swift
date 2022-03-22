@@ -11,7 +11,7 @@ import Foundation
 struct Environment {
     
     /// Current Web application version
-    static let version: String = "v1/"
+    static let version: String = "v1?"
     
     /// End point for current app Environment i.e , Pre-prod, Prod
     static var baseUrl : String {

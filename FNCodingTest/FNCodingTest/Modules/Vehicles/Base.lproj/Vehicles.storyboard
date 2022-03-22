@@ -15,8 +15,20 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="eum-W4-gdF">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="eum-W4-gdF" secondAttribute="trailing" id="Pgx-fr-eY0"/>
+                            <constraint firstItem="eum-W4-gdF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Ri5-cv-yeu"/>
+                            <constraint firstItem="eum-W4-gdF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kbd-Rn-tl8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eum-W4-gdF" secondAttribute="bottom" id="sVr-8r-ObD"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YWW-r7-4Pr"/>
                 </viewController>
