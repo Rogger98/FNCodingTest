@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (5.4.4)
+  - EarlGrey (1.16.0)
   - RxCocoa (6.2.0):
     - RxRelay (= 6.2.0)
     - RxSwift (= 6.2.0)
@@ -12,6 +13,7 @@ PODS:
 
 DEPENDENCIES:
   - Alamofire
+  - EarlGrey
   - RxCocoa
   - RxGesture
   - RxSwift
@@ -19,6 +21,7 @@ DEPENDENCIES:
 SPEC REPOS:
   trunk:
     - Alamofire
+    - EarlGrey
     - RxCocoa
     - RxGesture
     - RxRelay
@@ -26,11 +29,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: f3b09a368f1582ab751b3fff5460276e0d2cf5c9
+  EarlGrey: 455e5597ae5ccaca92cd46b81d8b25cacec060a1
   RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
   RxGesture: f059f2aeef966fb17dad56ee440e76410f10e55f
   RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
   RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
 
-PODFILE CHECKSUM: ff1dca7fc4768bd90ffdc9ff0b5db231aa5cf33c
+PODFILE CHECKSUM: 9707d9b4e23431d23253eaac7bf67dd2ea8265ac
 
 COCOAPODS: 1.11.0

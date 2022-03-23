@@ -21,7 +21,7 @@ struct VehicleListViewModel: VehicleListViewModelType {
     
     let vehicleServiceType: VehicleListAPIProtocol
     
-    init(vehicleServiceType: VehicleListAPIProtocol) {
+    init(vehicleServiceType: VehicleListAPIProtocol,navigator: VehiclesNavigator) {
         self.vehicleServiceType = vehicleServiceType
     }
     
@@ -30,4 +30,6 @@ struct VehicleListViewModel: VehicleListViewModelType {
             self.vehicleList.onNext(list)
         }
     }
+    
+  
 }

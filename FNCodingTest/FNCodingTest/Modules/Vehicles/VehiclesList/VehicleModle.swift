@@ -23,7 +23,6 @@ struct PoiList: Codable {
     let coordinate: Coordinate?
     let state, type: Generic?
     let heading: Generic?
-    
     var poiState: POIState? {
         POIState(rawValue: state?.stringValue ?? "")
     }

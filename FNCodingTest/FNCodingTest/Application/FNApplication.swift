@@ -10,7 +10,7 @@ import UIKit
 class FNApplication {
     
     /// setup All library and routing stuff
-    class func setupApp(window: UIWindow) {
-        
+    class func setupApp(window: UIWindow,appCordinator: FNFlowCoordinator) {
+        appCordinator.start()
     }
 }

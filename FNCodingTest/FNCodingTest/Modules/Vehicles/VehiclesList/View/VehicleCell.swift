@@ -7,20 +7,15 @@
 
 import UIKit
 
-class VehicleCell: UITableViewCell {
+final class VehicleCell: UITableViewCell {
 
     @IBOutlet private weak var labelVehicleIdentity: UILabel?
     @IBOutlet private weak var labelVehicleType: UILabel?
     @IBOutlet private weak var imageViewVehicle: UIImageView?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
     var vehicle: PoiList? {

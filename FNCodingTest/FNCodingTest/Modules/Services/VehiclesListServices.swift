@@ -6,9 +6,8 @@
 //
 
 import Foundation
-import Combine
 
-protocol VehicleListAPIProtocol {
+protocol VehicleListAPIProtocol : AnyObject {
     func getVehicles(p1: Location, p2: Location,complition: @escaping(_ data: [PoiList]) -> Void)
 }
 
@@ -24,8 +23,4 @@ final class VehiclesListAPI : VehicleListAPIProtocol {
             }
         }
     }
-    
-    
-    
-    
 }

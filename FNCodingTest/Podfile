@@ -15,10 +15,11 @@ target 'FNCodingTest' do
   target 'FNCodingTestTests' do
     inherit! :search_paths
     # Pods for testing
+    pod "RxSwift"
+    pod "RxCocoa"
+    pod "RxGesture"
+    pod "EarlGrey"
   end
 
-  target 'FNCodingTestUITests' do
-    # Pods for testing
-  end
 
 end

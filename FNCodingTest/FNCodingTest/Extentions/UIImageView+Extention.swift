@@ -9,6 +9,7 @@ import UIKit
 
 extension UIImageView {
     
+    /// set Image
     func setFNImage(image: FNImages) {
         self.image = UIImage(named: image.rawValue)
     }
