@@ -1,0 +1,6 @@
+framework module Pods_FNCodingTest_FNCodingTestUITests {
+  umbrella header "Pods-FNCodingTest-FNCodingTestUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

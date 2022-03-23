@@ -6,15 +6,18 @@
 //
 
 import Foundation
-import Combine
+import RxSwift
+import RxRelay
 
 protocol VehicleListViewModelType {
-    
-    func getAllVehicles(p1: Location,p2:Location,complition: @escaping(_ data: [PoiList]) -> Void)
+    var vehicleList : BehaviorSubject<[PoiList]> { get set }
+    func getAllVehicles(p1: Location,p2:Location)
 }
 
 
 struct VehicleListViewModel: VehicleListViewModelType {
+    var vehicleList: BehaviorSubject<[PoiList]> = BehaviorSubject<[PoiList]>(value: [])
+    
     
     let vehicleServiceType: VehicleListAPIProtocol
     
@@ -22,7 +25,9 @@ struct VehicleListViewModel: VehicleListViewModelType {
         self.vehicleServiceType = vehicleServiceType
     }
     
-    func getAllVehicles(p1: Location, p2: Location,complition: @escaping(_ data: [PoiList]) -> Void) {
-        vehicleServiceType.getVehicles(p1: p1, p2: p2, complition: complition)
+    func getAllVehicles(p1: Location, p2: Location) {
+        vehicleServiceType.getVehicles(p1: p1, p2: p2) { (list) in
+            self.vehicleList.onNext(list)
+        }
     }
 }
