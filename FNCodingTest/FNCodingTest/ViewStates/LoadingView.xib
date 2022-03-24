@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingView" customModule="FNCodingTest" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sFE-qc-hH5">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="lYI-A6-yC0">
+                            <rect key="frame" x="188.5" y="412.5" width="37" height="37"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please wait we are getting vehicles for you.." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSX-5X-txu">
+                            <rect key="frame" x="100" y="469.5" width="214" height="41"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="cSX-5X-txu" firstAttribute="top" secondItem="lYI-A6-yC0" secondAttribute="bottom" constant="20" id="1GM-rn-Htr"/>
+                        <constraint firstItem="lYI-A6-yC0" firstAttribute="centerX" secondItem="sFE-qc-hH5" secondAttribute="centerX" id="A0B-Bh-Mqt"/>
+                        <constraint firstItem="lYI-A6-yC0" firstAttribute="centerY" secondItem="sFE-qc-hH5" secondAttribute="centerY" id="AKp-8u-sOu"/>
+                        <constraint firstItem="cSX-5X-txu" firstAttribute="leading" secondItem="sFE-qc-hH5" secondAttribute="leading" constant="100" id="cLn-8b-b6O"/>
+                        <constraint firstAttribute="trailing" secondItem="cSX-5X-txu" secondAttribute="trailing" constant="100" id="sS7-7u-gVc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="sFE-qc-hH5" secondAttribute="trailing" id="2hV-wK-cWv"/>
+                <constraint firstItem="sFE-qc-hH5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Hth-dK-UCh"/>
+                <constraint firstItem="sFE-qc-hH5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ufd-o5-ZoV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="sFE-qc-hH5" secondAttribute="bottom" id="gZZ-Xr-tas"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="120"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

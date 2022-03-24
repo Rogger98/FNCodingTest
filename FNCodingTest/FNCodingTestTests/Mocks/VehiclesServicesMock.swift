@@ -15,50 +15,13 @@ import XCTest
 class VehiclesServicesMock : VehicleListAPIProtocol {
     
     var vehiclesFetchCount: Int = 0
+    
     func getVehicles(p1: Location, p2: Location, complition: @escaping ([PoiList]) -> Void) {
-        
-        print("test")
-        vehiclesFetchCount += 1
+        print("Moke API Call and responding Data from json")
+        vehiclesFetchCount += 1        
         let data = POIResponse.loadFromFile("PoiService.json")
         complition(data.poiList ?? [])
     }
 }
 
-class ApplicationFlowCoordinatorDependencyProviderMock: ApplicationFlowCoordinatorDependencyProvider {
-    
-    
-    var vehiclesNavigationController: UINavigationController?
-    
-    func vehiclesNavigationController(navigator: VehiclesNavigator) -> UINavigationController {
-        vehiclesNavigationController!
-    }
-    
-    func vehiclesDetails(_ vehicles: [PoiList]) -> UIViewController {
-        UIViewController()
-    }
-    
-}
 
-struct VehiclesListViewModleMock : VehicleListViewModelType {
-    
-    var vehicleList: BehaviorSubject<[PoiList]> = BehaviorSubject<[PoiList]>(value: [])
-    
-    func getAllVehicles(p1: Location, p2: Location) {
-        let vehicles = POIResponse.loadFromFile("PoiService.json")
-        self.vehicleList.onNext(vehicles.poiList ?? [])
-    }
-    
-    
-}
-class VehiclesListNavigatorMock: VehiclesNavigator {
-
-    //MARK: - showDetails
-
-    var showDetailsForVehicles = 0
-    func showDetails(forVehicle vehicles: [PoiList]) {
-        showDetailsForVehicles += 1
-    }
-
-
-
-}

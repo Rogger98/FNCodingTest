@@ -12,6 +12,7 @@ class FNAppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var appCordinator: FNFlowCoordinator!
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         let window =  UIWindow(frame: UIScreen.main.bounds)

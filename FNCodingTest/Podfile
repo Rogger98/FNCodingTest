@@ -9,6 +9,7 @@ target 'FNCodingTest' do
   pod "RxCocoa"
   pod "RxGesture"
   pod "Alamofire"
+  pod "lottie-ios"
   
   # Pods for FNCodingTest
 

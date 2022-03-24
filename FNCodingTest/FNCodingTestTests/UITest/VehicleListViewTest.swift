@@ -18,11 +18,14 @@ class VehicleListViewTest: FNTestCase {
         // GIVEN /WHEN
         open(viewController: factory.vehiclesNavigationController(navigator: vehiclesNavigator))
         
+        Page.on(VehiclesListPage.self)
+            .assertScreenTitle("VEHICLES")
         
     }
     
   
-    func test_showError_whenNoResultsFound() {
+    func test_vehiclesCound() {
+        // GIVEN
         
     }
     
