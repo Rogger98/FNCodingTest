@@ -18,7 +18,7 @@ final class ApplicationComponentsFactory {
 }
 
 extension ApplicationComponentsFactory: ApplicationFlowCoordinatorDependencyProvider {
-    func vehiclesNavigationController(navigator: VehiclesNavigator) -> UINavigationController {
+    func vehiclesNavigationController(navigator: VehiclesNavigatorType) -> UINavigationController {
         let viewModel = VehicleListViewModel(vehicleServiceType: servicesProvider,navigator: navigator)
         let moviesSearchViewController = VehiclesViewController(viewModel: viewModel)
         let moviesSearchNavigationController = UINavigationController(rootViewController: moviesSearchViewController)

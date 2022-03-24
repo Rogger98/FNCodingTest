@@ -6,17 +6,17 @@
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
-import Combine
 
-class VehiclesViewController: UIViewController {
+class VehiclesViewController: BaseViewController {
 
     // MARK: - Outlets
     @IBOutlet private var tableViewVehicles: UITableView!
-    private var refreshButton: UIButton = UIButton(type: .roundedRect)
+    @IBOutlet private var activityLoader: UIActivityIndicatorView!
+    
+    private var refreshButton: UIBarButtonItem = UIBarButtonItem(systemItem: .refresh)
     var viewModel: VehicleListViewModelType
-    var disposeBag: DisposeBag = DisposeBag()
+    
+    
     
     init(viewModel: VehicleListViewModelType) {
         self.viewModel = viewModel
@@ -44,9 +44,10 @@ class VehiclesViewController: UIViewController {
     }
     
     private func setupUI() {
-        title = "VEHICLES"
-        let barButton = UIBarButtonItem(systemItem: .refresh)
-        self.navigationItem.rightBarButtonItem = barButton
+        view.accessibilityIdentifier = AccessibilityIdentifiers.VehicleList.rootViewId
+        tableViewVehicles.accessibilityIdentifier = AccessibilityIdentifiers.VehicleList.tableViewId
+        title = "VEHICLES"        
+        self.navigationItem.rightBarButtonItem = refreshButton
         tableViewVehicles.registerCell(VehicleCell.self)
     }
     
@@ -62,8 +63,13 @@ class VehiclesViewController: UIViewController {
         
         viewModel.vehicleList.bind(to: tableViewVehicles.rx.items(cellIdentifier: VehicleCell.identifier, cellType: VehicleCell.self)) {row, model, cell in
             cell.vehicle = model
+            cell.accessibilityIdentifier = "\(AccessibilityIdentifiers.VehicleList.cellId).\(row)"
         }.disposed(by: disposeBag)
-        
+        viewModel.viewState.subscribe { [weak self] (state) in
+            guard let `self` = self, let viewState = state.element else { return }
+            self.configure(from: viewState)
+        }.disposed(by: disposeBag)
+
     }
 }
 // MARK: - Data Requesting

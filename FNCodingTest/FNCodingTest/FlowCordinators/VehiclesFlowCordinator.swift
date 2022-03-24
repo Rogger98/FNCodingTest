@@ -25,7 +25,7 @@ class VehiclesFlowCordinator: FlowCoordinator {
     }
 }
 
-extension VehiclesFlowCordinator: VehiclesNavigator {
+extension VehiclesFlowCordinator: VehiclesNavigatorType {
     func showDetails(forVehicle vehicles: [PoiList]) {
         
     }

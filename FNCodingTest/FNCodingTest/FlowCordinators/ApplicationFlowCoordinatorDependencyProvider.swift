@@ -13,7 +13,7 @@ protocol ApplicationFlowCoordinatorDependencyProvider: VehiclesFlowCoordinatorDe
 
 protocol VehiclesFlowCoordinatorDependencyProvider: class {
     /// Creates UIViewController to search for a movie
-    func vehiclesNavigationController(navigator: VehiclesNavigator) -> UINavigationController
+    func vehiclesNavigationController(navigator: VehiclesNavigatorType) -> UINavigationController
 
     // Creates UIViewController to show the details of the movie with specified identifier
     func vehiclesDetails(_ vehicles: [PoiList]) -> UIViewController
