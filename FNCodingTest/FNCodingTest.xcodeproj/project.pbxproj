@@ -32,6 +32,19 @@
 		6E11026427EC4259003A6F01 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E11026327EC4259003A6F01 /* LoadingView.xib */; };
 		6E11026827EC4376003A6F01 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E11026727EC4376003A6F01 /* BaseViewController.swift */; };
 		6E11026E27EC445E003A6F01 /* UIView+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E11026D27EC445E003A6F01 /* UIView+Extention.swift */; };
+		6E11028C27EC4A90003A6F01 /* MapView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E11028327EC4A8C003A6F01 /* MapView.framework */; };
+		6E11029327EC4A91003A6F01 /* MapViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E11029227EC4A91003A6F01 /* MapViewTests.m */; };
+		6E11029527EC4A91003A6F01 /* MapView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E11028527EC4A8C003A6F01 /* MapView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E11029827EC4A91003A6F01 /* MapView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E11028327EC4A8C003A6F01 /* MapView.framework */; };
+		6E11029927EC4A91003A6F01 /* MapView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6E11028327EC4A8C003A6F01 /* MapView.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6E1102A727EC4AB4003A6F01 /* MapViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E1102A427EC4AB4003A6F01 /* MapViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E1102A827EC4AB4003A6F01 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1102A527EC4AB4003A6F01 /* MapViewController.m */; };
+		6E1102A927EC4AB4003A6F01 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E1102A627EC4AB4003A6F01 /* MapViewController.xib */; };
+		6E1102D627EC706F003A6F01 /* POI.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E1102D427EC706F003A6F01 /* POI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E1102D727EC706F003A6F01 /* POI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1102D527EC706F003A6F01 /* POI.m */; };
+		6E11030027EC9029003A6F01 /* Vehicle.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E1102FE27EC9029003A6F01 /* Vehicle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E11030127EC9029003A6F01 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1102FF27EC9029003A6F01 /* Vehicle.m */; };
+		6E11033127ECBE7A003A6F01 /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E11033027ECBE7A003A6F01 /* assets.xcassets */; };
 		6E3A341727EB546500D40598 /* FNFlowCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3A341627EB546500D40598 /* FNFlowCoordinatorTests.swift */; };
 		6E3A342027EB589D00D40598 /* PoiService.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E3A341F27EB589D00D40598 /* PoiService.json */; };
 		6E3A343027EB59A300D40598 /* EarlGrey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3A342F27EB59A300D40598 /* EarlGrey.swift */; };
@@ -75,7 +88,42 @@
 			remoteGlobalIDString = 6E0EC27827E96B1F0037F574;
 			remoteInfo = FNCodingTest;
 		};
+		6E11028D27EC4A90003A6F01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E0EC27127E96B1F0037F574 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E11028227EC4A8C003A6F01;
+			remoteInfo = MapView;
+		};
+		6E11028F27EC4A90003A6F01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E0EC27127E96B1F0037F574 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E0EC27827E96B1F0037F574;
+			remoteInfo = FNCodingTest;
+		};
+		6E11029627EC4A91003A6F01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6E0EC27127E96B1F0037F574 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6E11028227EC4A8C003A6F01;
+			remoteInfo = MapView;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		6E11029A27EC4A91003A6F01 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6E11029927EC4A91003A6F01 /* MapView.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		33787F204FCABA21F873F36D /* Pods-FNCodingTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FNCodingTestTests.debug.xcconfig"; path = "Target Support Files/Pods-FNCodingTestTests/Pods-FNCodingTestTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +155,21 @@
 		6E11026327EC4259003A6F01 /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
 		6E11026727EC4376003A6F01 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		6E11026D27EC445E003A6F01 /* UIView+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extention.swift"; sourceTree = "<group>"; };
+		6E11028327EC4A8C003A6F01 /* MapView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MapView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E11028527EC4A8C003A6F01 /* MapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
+		6E11028627EC4A8C003A6F01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E11028B27EC4A90003A6F01 /* MapViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E11029227EC4A91003A6F01 /* MapViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewTests.m; sourceTree = "<group>"; };
+		6E11029427EC4A91003A6F01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E1102A427EC4AB4003A6F01 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		6E1102A527EC4AB4003A6F01 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		6E1102A627EC4AB4003A6F01 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		6E1102AD27EC4DE1003A6F01 /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
+		6E1102D427EC706F003A6F01 /* POI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POI.h; sourceTree = "<group>"; };
+		6E1102D527EC706F003A6F01 /* POI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POI.m; sourceTree = "<group>"; };
+		6E1102FE27EC9029003A6F01 /* Vehicle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
+		6E1102FF27EC9029003A6F01 /* Vehicle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
+		6E11033027ECBE7A003A6F01 /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 		6E3A341627EB546500D40598 /* FNFlowCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNFlowCoordinatorTests.swift; sourceTree = "<group>"; };
 		6E3A341F27EB589D00D40598 /* PoiService.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PoiService.json; sourceTree = "<group>"; };
 		6E3A342F27EB59A300D40598 /* EarlGrey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarlGrey.swift; sourceTree = "<group>"; };
@@ -148,6 +211,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E11029827EC4A91003A6F01 /* MapView.framework in Frameworks */,
 				02D93EBCD727FCDDEB6D6E80 /* Pods_FNCodingTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +224,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6E11028027EC4A8C003A6F01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E11028827EC4A90003A6F01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E11028C27EC4A90003A6F01 /* MapView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -168,6 +247,8 @@
 			children = (
 				6E0EC27B27E96B1F0037F574 /* FNCodingTest */,
 				6E0EC29227E96B200037F574 /* FNCodingTestTests */,
+				6E11028427EC4A8C003A6F01 /* MapView */,
+				6E11029127EC4A90003A6F01 /* MapViewTests */,
 				6E0EC27A27E96B1F0037F574 /* Products */,
 				F04BEC03C79D11A80104917B /* Pods */,
 				E92C3D9D18B47601358EFCBE /* Frameworks */,
@@ -179,6 +260,8 @@
 			children = (
 				6E0EC27927E96B1F0037F574 /* FNCodingTest.app */,
 				6E0EC28F27E96B200037F574 /* FNCodingTestTests.xctest */,
+				6E11028327EC4A8C003A6F01 /* MapView.framework */,
+				6E11028B27EC4A90003A6F01 /* MapViewTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,16 +269,16 @@
 		6E0EC27B27E96B1F0037F574 /* FNCodingTest */ = {
 			isa = PBXGroup;
 			children = (
-				6E11025C27EC4235003A6F01 /* ViewStates */,
-				6EDEDD8327EB3FF300F61280 /* Utils */,
-				6EDEDD6B27EB3E2500F61280 /* FlowCordinators */,
-				6E74155727E9848500C1C096 /* Utility */,
-				6E0EC2ED27E97A880037F574 /* Network */,
-				6E0EC2B227E96E270037F574 /* Extentions */,
-				6E0EC2B127E96E0D0037F574 /* Modules */,
-				6E0EC2B027E96E060037F574 /* Resource */,
 				6E0EC2AF27E96DF70037F574 /* Application */,
+				6E0EC2B227E96E270037F574 /* Extentions */,
+				6EDEDD6B27EB3E2500F61280 /* FlowCordinators */,
 				6E0EC28A27E96B200037F574 /* Info.plist */,
+				6E0EC2B127E96E0D0037F574 /* Modules */,
+				6E0EC2ED27E97A880037F574 /* Network */,
+				6E0EC2B027E96E060037F574 /* Resource */,
+				6E74155727E9848500C1C096 /* Utility */,
+				6EDEDD8327EB3FF300F61280 /* Utils */,
+				6E11025C27EC4235003A6F01 /* ViewStates */,
 			);
 			path = FNCodingTest;
 			sourceTree = "<group>";
@@ -219,6 +302,7 @@
 				6E0EC2B327E9704D0037F574 /* FNAppDelegate.swift */,
 				6E0EC2CC27E973550037F574 /* FNApplication.swift */,
 				6E3A346027EB688100D40598 /* main.swift */,
+				6E1102AD27EC4DE1003A6F01 /* BridgeHeader.h */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -301,6 +385,72 @@
 				6E11026327EC4259003A6F01 /* LoadingView.xib */,
 			);
 			path = ViewStates;
+			sourceTree = "<group>";
+		};
+		6E11028427EC4A8C003A6F01 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				6E11032F27ECBE64003A6F01 /* Resource */,
+				6E1102D227EC7040003A6F01 /* Source */,
+				6E11028527EC4A8C003A6F01 /* MapView.h */,
+				6E11028627EC4A8C003A6F01 /* Info.plist */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
+		6E11029127EC4A90003A6F01 /* MapViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				6E11029227EC4A91003A6F01 /* MapViewTests.m */,
+				6E11029427EC4A91003A6F01 /* Info.plist */,
+			);
+			path = MapViewTests;
+			sourceTree = "<group>";
+		};
+		6E1102D227EC7040003A6F01 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				6E1102FC27EC8FCE003A6F01 /* Map */,
+				6E1102D327EC704F003A6F01 /* Models */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		6E1102D327EC704F003A6F01 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6E1102D427EC706F003A6F01 /* POI.h */,
+				6E1102D527EC706F003A6F01 /* POI.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6E1102FC27EC8FCE003A6F01 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				6E1102FD27EC8FF3003A6F01 /* View */,
+				6E1102A427EC4AB4003A6F01 /* MapViewController.h */,
+				6E1102A527EC4AB4003A6F01 /* MapViewController.m */,
+				6E1102A627EC4AB4003A6F01 /* MapViewController.xib */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		6E1102FD27EC8FF3003A6F01 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6E1102FE27EC9029003A6F01 /* Vehicle.h */,
+				6E1102FF27EC9029003A6F01 /* Vehicle.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6E11032F27ECBE64003A6F01 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				6E11033027ECBE7A003A6F01 /* assets.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		6E3A341527EB545000D40598 /* UnitTests */ = {
@@ -434,6 +584,20 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		6E11027E27EC4A8C003A6F01 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E1102D627EC706F003A6F01 /* POI.h in Headers */,
+				6E1102A727EC4AB4003A6F01 /* MapViewController.h in Headers */,
+				6E11029527EC4A91003A6F01 /* MapView.h in Headers */,
+				6E11030027EC9029003A6F01 /* Vehicle.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		6E0EC27827E96B1F0037F574 /* FNCodingTest */ = {
 			isa = PBXNativeTarget;
@@ -444,10 +608,12 @@
 				6E0EC27627E96B1F0037F574 /* Frameworks */,
 				6E0EC27727E96B1F0037F574 /* Resources */,
 				50A654F171A6784C7C8A6A63 /* [CP] Embed Pods Frameworks */,
+				6E11029A27EC4A91003A6F01 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				6E11029727EC4A91003A6F01 /* PBXTargetDependency */,
 			);
 			name = FNCodingTest;
 			productName = FNCodingTest;
@@ -474,6 +640,43 @@
 			productReference = 6E0EC28F27E96B200037F574 /* FNCodingTestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		6E11028227EC4A8C003A6F01 /* MapView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E11029F27EC4A91003A6F01 /* Build configuration list for PBXNativeTarget "MapView" */;
+			buildPhases = (
+				6E11027E27EC4A8C003A6F01 /* Headers */,
+				6E11027F27EC4A8C003A6F01 /* Sources */,
+				6E11028027EC4A8C003A6F01 /* Frameworks */,
+				6E11028127EC4A8C003A6F01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MapView;
+			productName = MapView;
+			productReference = 6E11028327EC4A8C003A6F01 /* MapView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6E11028A27EC4A90003A6F01 /* MapViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6E1102A027EC4A91003A6F01 /* Build configuration list for PBXNativeTarget "MapViewTests" */;
+			buildPhases = (
+				6E11028727EC4A90003A6F01 /* Sources */,
+				6E11028827EC4A90003A6F01 /* Frameworks */,
+				6E11028927EC4A90003A6F01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6E11028E27EC4A90003A6F01 /* PBXTargetDependency */,
+				6E11029027EC4A90003A6F01 /* PBXTargetDependency */,
+			);
+			name = MapViewTests;
+			productName = MapViewTests;
+			productReference = 6E11028B27EC4A90003A6F01 /* MapViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -487,6 +690,13 @@
 						CreatedOnToolsVersion = 12.4;
 					};
 					6E0EC28E27E96B200037F574 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 6E0EC27827E96B1F0037F574;
+					};
+					6E11028227EC4A8C003A6F01 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					6E11028A27EC4A90003A6F01 = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 6E0EC27827E96B1F0037F574;
 					};
@@ -507,6 +717,8 @@
 			targets = (
 				6E0EC27827E96B1F0037F574 /* FNCodingTest */,
 				6E0EC28E27E96B200037F574 /* FNCodingTestTests */,
+				6E11028227EC4A8C003A6F01 /* MapView */,
+				6E11028A27EC4A90003A6F01 /* MapViewTests */,
 			);
 		};
 /* End PBXProject section */
@@ -530,6 +742,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E3A342027EB589D00D40598 /* PoiService.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E11028127EC4A8C003A6F01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E11033127ECBE7A003A6F01 /* assets.xcassets in Resources */,
+				6E1102A927EC4AB4003A6F01 /* MapViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E11028927EC4A90003A6F01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -680,6 +908,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6E11027F27EC4A8C003A6F01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E1102D727EC706F003A6F01 /* POI.m in Sources */,
+				6E1102A827EC4AB4003A6F01 /* MapViewController.m in Sources */,
+				6E11030127EC9029003A6F01 /* Vehicle.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E11028727EC4A90003A6F01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E11029327EC4A91003A6F01 /* MapViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -687,6 +933,21 @@
 			isa = PBXTargetDependency;
 			target = 6E0EC27827E96B1F0037F574 /* FNCodingTest */;
 			targetProxy = 6E0EC29027E96B200037F574 /* PBXContainerItemProxy */;
+		};
+		6E11028E27EC4A90003A6F01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E11028227EC4A8C003A6F01 /* MapView */;
+			targetProxy = 6E11028D27EC4A90003A6F01 /* PBXContainerItemProxy */;
+		};
+		6E11029027EC4A90003A6F01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E0EC27827E96B1F0037F574 /* FNCodingTest */;
+			targetProxy = 6E11028F27EC4A90003A6F01 /* PBXContainerItemProxy */;
+		};
+		6E11029727EC4A91003A6F01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6E11028227EC4A8C003A6F01 /* MapView */;
+			targetProxy = 6E11029627EC4A91003A6F01 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -832,8 +1093,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.FNCodingTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = FNCodingTest/Application/BridgeHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = FNCodingTest/Application/BridgeHeader.h;
 			};
 			name = Debug;
 		};
@@ -851,8 +1114,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.FNCodingTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = FNCodingTest/Application/BridgeHeader.h;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				USER_HEADER_SEARCH_PATHS = FNCodingTest/Application/BridgeHeader.h;
 			};
 			name = Release;
 		};
@@ -908,6 +1173,92 @@
 			};
 			name = Release;
 		};
+		6E11029B27EC4A91003A6F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MapView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MapView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6E11029C27EC4A91003A6F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = MapView/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MapView;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6E11029D27EC4A91003A6F01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MapViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MapViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FNCodingTest.app/FNCodingTest";
+			};
+			name = Debug;
+		};
+		6E11029E27EC4A91003A6F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MapViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.MapViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FNCodingTest.app/FNCodingTest";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -934,6 +1285,24 @@
 			buildConfigurations = (
 				6E0EC2A727E96B200037F574 /* Debug */,
 				6E0EC2A827E96B200037F574 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E11029F27EC4A91003A6F01 /* Build configuration list for PBXNativeTarget "MapView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E11029B27EC4A91003A6F01 /* Debug */,
+				6E11029C27EC4A91003A6F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6E1102A027EC4A91003A6F01 /* Build configuration list for PBXNativeTarget "MapViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6E11029D27EC4A91003A6F01 /* Debug */,
+				6E11029E27EC4A91003A6F01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

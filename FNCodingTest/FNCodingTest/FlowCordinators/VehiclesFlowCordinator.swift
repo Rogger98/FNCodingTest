@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 /// The `VehiclesFlowCordinator` takes control over the flows on the movies search screen
 class VehiclesFlowCordinator: FlowCoordinator {
@@ -28,6 +29,16 @@ class VehiclesFlowCordinator: FlowCoordinator {
 extension VehiclesFlowCordinator: VehiclesNavigatorType {
     func showDetails(forVehicle vehicles: [PoiList]) {
         
+        
+//        let data = vehicles.compactMap({POI($0.id?.stringValue ?? "",poiState: $0.state?.stringValue ?? "",poiType: $0.type?.stringValue ?? "",poiHeading: $0.heading?.stringValue ?? "",poiLocation:POILocation($0.coordinate?.latitude?.stringValue ?? "", longtitude: $0.coordinate?.longitude?.stringValue ?? ""))})
+        
+        let data = vehicles.compactMap { (item) -> POI in
+            let location = CLLocationCoordinate2D(latitude: item.coordinate?.latitude?.doubleValue ?? 0.0, longitude: item.coordinate?.longitude?.doubleValue ?? 0.0)
+            let poi = POI(item.id?.stringValue ?? "",poiState: item.state?.stringValue ?? "",poiType: item.type?.stringValue ?? "",poiHeading: item.heading?.stringValue ?? "",poiLocation: location)
+            return poi
+        }
+        let mapController = MapViewController(data)
+        searchNavigationController?.pushViewController(mapController, animated: true)
     }
 
 }

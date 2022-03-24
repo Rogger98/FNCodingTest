@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import RxSwift
 
 class VehiclesViewController: BaseViewController {
 
@@ -60,15 +61,29 @@ class VehiclesViewController: BaseViewController {
             self.getAllVehicles()
         }).disposed(by: disposeBag)
         
-        
         viewModel.vehicleList.bind(to: tableViewVehicles.rx.items(cellIdentifier: VehicleCell.identifier, cellType: VehicleCell.self)) {row, model, cell in
             cell.vehicle = model
             cell.accessibilityIdentifier = "\(AccessibilityIdentifiers.VehicleList.cellId).\(row)"
         }.disposed(by: disposeBag)
+        
+        Observable.zip(tableViewVehicles.rx.itemSelected, tableViewVehicles.rx.modelSelected(PoiList.self))
+               .bind { [unowned self] indexPath, model in
+            self.tableViewVehicles.deselectRow(at: indexPath, animated: true)
+                do {
+                    let list = try self.viewModel.vehicleList.value()
+                    self.viewModel.navigator.showDetails(forVehicle: list)
+                } catch {
+                    print("Error \(error.localizedDescription)")
+                }
+        }.disposed(by: disposeBag)
+
+        
         viewModel.viewState.subscribe { [weak self] (state) in
             guard let `self` = self, let viewState = state.element else { return }
             self.configure(from: viewState)
         }.disposed(by: disposeBag)
+        
+        
 
     }
 }

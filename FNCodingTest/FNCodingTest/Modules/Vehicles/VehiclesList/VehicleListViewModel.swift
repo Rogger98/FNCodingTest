@@ -12,6 +12,7 @@ import RxRelay
 protocol VehicleListViewModelType {
     var vehicleList : BehaviorSubject<[PoiList]> { get set }
     var viewState: BehaviorSubject<VehicleListViewState> { get set }
+    var navigator: VehiclesNavigatorType { get set }
     func getAllVehicles(p1: Location,p2:Location)
 }
 
@@ -22,15 +23,16 @@ enum VehicleListViewState {
     case appear
 }
 struct VehicleListViewModel: VehicleListViewModelType {
+
     var viewState: BehaviorSubject<VehicleListViewState> = BehaviorSubject<VehicleListViewState>(value: .appear)
-    
     var vehicleList: BehaviorSubject<[PoiList]> = BehaviorSubject<[PoiList]>(value: [])
     
-    
+    var navigator: VehiclesNavigatorType
     let vehicleServiceType: VehicleListAPIProtocol
     
     init(vehicleServiceType: VehicleListAPIProtocol,navigator: VehiclesNavigatorType) {
         self.vehicleServiceType = vehicleServiceType
+        self.navigator = navigator
     }
     
     func getAllVehicles(p1: Location, p2: Location) {

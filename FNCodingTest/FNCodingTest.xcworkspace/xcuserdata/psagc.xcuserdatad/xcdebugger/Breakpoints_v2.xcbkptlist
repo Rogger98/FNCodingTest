@@ -20,53 +20,5 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "79E9167C-B341-45BC-B16B-C990155B17D1"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "FNCodingTest/Modules/Services/VehiclesListServices.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "17"
-            endingLineNumber = "17"
-            landmarkName = "getVehicles(p1:p2:complition:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "79E9167C-B341-45BC-B16B-C990155B17D1 - e54367d1162ae533"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "FNCodingTest.VehiclesListAPI.getVehicles(p1: FNCodingTest.Location, p2: FNCodingTest.Location, complition: (Swift.Array&lt;FNCodingTest.PoiList&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "FNCodingTest"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/psagc/Documents/Personal/CodeBase/FNCodingTest/FNCodingTest/FNCodingTest/Modules/Services/VehiclesListServices.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "76">
-               </Location>
-               <Location
-                  uuid = "79E9167C-B341-45BC-B16B-C990155B17D1 - 549e76c178fbb4df"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (FNCodingTest.APIResult&lt;FNCodingTest.POIResponse&gt;) -&gt; () in FNCodingTest.VehiclesListAPI.getVehicles(p1: FNCodingTest.Location, p2: FNCodingTest.Location, complition: (Swift.Array&lt;FNCodingTest.PoiList&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "FNCodingTest"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/psagc/Documents/Personal/CodeBase/FNCodingTest/FNCodingTest/FNCodingTest/Modules/Services/VehiclesListServices.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "18"
-                  endingLineNumber = "18"
-                  offsetFromSymbolStart = "176">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
