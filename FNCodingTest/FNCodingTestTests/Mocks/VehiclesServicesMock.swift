@@ -14,11 +14,13 @@ import XCTest
 
 class VehiclesServicesMock : VehicleListAPIProtocol {
     
+    
+    
     var vehiclesFetchCount: Int = 0
     
-    func getVehicles(p1: Location, p2: Location, complition: @escaping ([PoiList]) -> Void) {
+    func getVehicles(p1: Location, p2: Location, complition: @escaping (APIResult<[PoiList]>) -> Void) {
         print("Moke API Call and responding Data from json")
-        vehiclesFetchCount += 1        
+        vehiclesFetchCount += 1
         let data = POIResponse.loadFromFile("PoiService.json")
         complition(data.poiList ?? [])
     }

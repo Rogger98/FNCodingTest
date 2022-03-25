@@ -20,10 +20,11 @@ final class ApplicationComponentsFactory {
 extension ApplicationComponentsFactory: ApplicationFlowCoordinatorDependencyProvider {
     func vehiclesNavigationController(navigator: VehiclesNavigatorType) -> UINavigationController {
         let viewModel = VehicleListViewModel(vehicleServiceType: servicesProvider,navigator: navigator)
-        let moviesSearchViewController = VehiclesViewController(viewModel: viewModel)
-        let moviesSearchNavigationController = UINavigationController(rootViewController: moviesSearchViewController)
-        moviesSearchNavigationController.navigationBar.tintColor = .label
-        return moviesSearchNavigationController
+        let vehicleListController = VehiclesViewController(viewModel: viewModel)
+        let vehiclesNavigationController = UINavigationController(rootViewController: vehicleListController)
+        vehiclesNavigationController.navigationBar.tintColor = .label
+        vehiclesNavigationController.navigationItem.backButtonDisplayMode = .minimal
+        return vehiclesNavigationController
     }
     
     func vehiclesDetails(_ vehicles: [PoiList]) -> UIViewController {

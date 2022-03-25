@@ -18,8 +18,8 @@ protocol VehicleListViewModelType {
 
 enum VehicleListViewState {
     case loading
-    case success
-    case error(String)
+    case success(Bool)
+    case error(WebError)
     case appear
 }
 struct VehicleListViewModel: VehicleListViewModelType {
@@ -37,9 +37,16 @@ struct VehicleListViewModel: VehicleListViewModelType {
     
     func getAllVehicles(p1: Location, p2: Location) {
         viewState.onNext(.loading)
-        vehicleServiceType.getVehicles(p1: p1, p2: p2) { (list) in
-            self.vehicleList.onNext(list)
-            viewState.onNext(.success)
+        vehicleServiceType.getVehicles(p1: p1, p2: p2) { (result) in
+            
+            switch result {
+            case .success(let pois):
+                self.vehicleList.onNext(pois)
+                viewState.onNext(.success(!pois.isEmpty))
+            case .error(let error):
+                viewState.onNext(.error(error))
+                
+            }
         }
     }
     

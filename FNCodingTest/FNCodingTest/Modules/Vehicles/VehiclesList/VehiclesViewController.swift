@@ -47,7 +47,8 @@ class VehiclesViewController: BaseViewController {
     private func setupUI() {
         view.accessibilityIdentifier = AccessibilityIdentifiers.VehicleList.rootViewId
         tableViewVehicles.accessibilityIdentifier = AccessibilityIdentifiers.VehicleList.tableViewId
-        title = "VEHICLES"        
+        //title = "VEHICLES"
+        title = StringConstants.VehicleScreen.vehicle.localized
         self.navigationItem.rightBarButtonItem = refreshButton
         tableViewVehicles.registerCell(VehicleCell.self)
     }
@@ -71,7 +72,7 @@ class VehiclesViewController: BaseViewController {
             self.tableViewVehicles.deselectRow(at: indexPath, animated: true)
                 do {
                     let list = try self.viewModel.vehicleList.value()
-                    self.viewModel.navigator.showDetails(forVehicle: list)
+                    self.viewModel.navigator.showDetails(forVehicle: list, selectedVehicle: list[indexPath.row])
                 } catch {
                     print("Error \(error.localizedDescription)")
                 }
@@ -91,6 +92,6 @@ class VehiclesViewController: BaseViewController {
 extension VehiclesViewController {
     
     func getAllVehicles() {
-        viewModel.getAllVehicles(p1: Location(lat: 53.394655, lon: 9.757589), p2: Location(lat: 53.694865, lon: 10.099891))
+        viewModel.getAllVehicles(p1: Location(lat: 0, lon: 0), p2: Location(lat: 53.694865, lon: 10.099891))
     }
 }

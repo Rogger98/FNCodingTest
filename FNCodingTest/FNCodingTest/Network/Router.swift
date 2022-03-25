@@ -26,7 +26,7 @@ extension Router {
     var path: String {
         switch self {
         case .getVehicles(let p1, let p2):
-            return Environment.baseUrl + "p1Lat=\(p1.lat)&p1Lon=\(p1.lon)&p2Lat=\(p2.lat)&p2Lon=\(p2.lon)"
+            return Environment.urlFor(.poiService) + "p1Lat=\(p1.lat)&p1Lon=\(p1.lon)&p2Lat=\(p2.lat)&p2Lon=\(p2.lon)"
         }
     }
 }

@@ -51,6 +51,15 @@
 		6E3A343427EB5C9900D40598 /* VehiclesViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3A343327EB5C9900D40598 /* VehiclesViewModelTests.swift */; };
 		6E3A344527EB60AE00D40598 /* VehicleListViewTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3A344427EB60AE00D40598 /* VehicleListViewTest.swift */; };
 		6E3A346127EB688100D40598 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3A346027EB688100D40598 /* main.swift */; };
+		6E3B989727ECFB6B004D70B3 /* NSBundle+Category.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3B989527ECFB6B004D70B3 /* NSBundle+Category.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E3B989827ECFB6B004D70B3 /* NSBundle+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3B989627ECFB6B004D70B3 /* NSBundle+Category.m */; };
+		6E6A8F8F27EDB12D00CC872D /* SelectedPOI.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E6A8F8D27EDB12D00CC872D /* SelectedPOI.h */; };
+		6E6A8F9027EDB12D00CC872D /* SelectedPOI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6A8F8E27EDB12D00CC872D /* SelectedPOI.m */; };
+		6E6A8F9527EDB13900CC872D /* SelectedPOI.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E6A8F9427EDB13900CC872D /* SelectedPOI.xib */; };
+		6E6A8F9F27EDCDE400CC872D /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E6A8F9E27EDCDE400CC872D /* MessageView.xib */; };
+		6E6A8FA427EDCDF100CC872D /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6A8FA327EDCDF100CC872D /* MessageView.swift */; };
+		6E6A900727EDF7D100CC872D /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6A900627EDF7D100CC872D /* StringConstants.swift */; };
+		6E6A900F27EDF8EA00CC872D /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6E6A900E27EDF8EA00CC872D /* Localizable.strings */; };
 		6E74155927E984A100C1C096 /* FNNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E74155827E984A100C1C096 /* FNNavigator.swift */; };
 		6E74155A27E984A100C1C096 /* FNNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E74155827E984A100C1C096 /* FNNavigator.swift */; };
 		6ED3CF8C27E9A5E900832A01 /* VehicleListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED3CF8B27E9A5E900832A01 /* VehicleListViewModel.swift */; };
@@ -176,6 +185,15 @@
 		6E3A343327EB5C9900D40598 /* VehiclesViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesViewModelTests.swift; sourceTree = "<group>"; };
 		6E3A344427EB60AE00D40598 /* VehicleListViewTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListViewTest.swift; sourceTree = "<group>"; };
 		6E3A346027EB688100D40598 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		6E3B989527ECFB6B004D70B3 /* NSBundle+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Category.h"; sourceTree = "<group>"; };
+		6E3B989627ECFB6B004D70B3 /* NSBundle+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Category.m"; sourceTree = "<group>"; };
+		6E6A8F8D27EDB12D00CC872D /* SelectedPOI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectedPOI.h; sourceTree = "<group>"; };
+		6E6A8F8E27EDB12D00CC872D /* SelectedPOI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectedPOI.m; sourceTree = "<group>"; };
+		6E6A8F9427EDB13900CC872D /* SelectedPOI.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedPOI.xib; sourceTree = "<group>"; };
+		6E6A8F9E27EDCDE400CC872D /* MessageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageView.xib; sourceTree = "<group>"; };
+		6E6A8FA327EDCDF100CC872D /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
+		6E6A900627EDF7D100CC872D /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		6E6A900E27EDF8EA00CC872D /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		6E74155827E984A100C1C096 /* FNNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNNavigator.swift; sourceTree = "<group>"; };
 		6ED3CF8B27E9A5E900832A01 /* VehicleListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehicleListViewModel.swift; sourceTree = "<group>"; };
 		6ED3CF9327E9A64800832A01 /* VehiclesListServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VehiclesListServices.swift; sourceTree = "<group>"; };
@@ -273,10 +291,10 @@
 				6E0EC2B227E96E270037F574 /* Extentions */,
 				6EDEDD6B27EB3E2500F61280 /* FlowCordinators */,
 				6E0EC28A27E96B200037F574 /* Info.plist */,
+				6ED3CF9227E9A63100832A01 /* Services */,
 				6E0EC2B127E96E0D0037F574 /* Modules */,
 				6E0EC2ED27E97A880037F574 /* Network */,
 				6E0EC2B027E96E060037F574 /* Resource */,
-				6E74155727E9848500C1C096 /* Utility */,
 				6EDEDD8327EB3FF300F61280 /* Utils */,
 				6E11025C27EC4235003A6F01 /* ViewStates */,
 			);
@@ -313,6 +331,8 @@
 				6E11023A27EC39B2003A6F01 /* taxi.gif */,
 				6E0EC28527E96B200037F574 /* Assets.xcassets */,
 				6E0EC28727E96B200037F574 /* LaunchScreen.storyboard */,
+				6E6A900627EDF7D100CC872D /* StringConstants.swift */,
+				6E6A900E27EDF8EA00CC872D /* Localizable.strings */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -320,7 +340,6 @@
 		6E0EC2B127E96E0D0037F574 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				6ED3CF9227E9A63100832A01 /* Services */,
 				6E0EC2BE27E9716F0037F574 /* Vehicles */,
 			);
 			path = Modules;
@@ -383,6 +402,8 @@
 			children = (
 				6E11025D27EC424D003A6F01 /* LoadingView.swift */,
 				6E11026327EC4259003A6F01 /* LoadingView.xib */,
+				6E6A8F9E27EDCDE400CC872D /* MessageView.xib */,
+				6E6A8FA327EDCDF100CC872D /* MessageView.swift */,
 			);
 			path = ViewStates;
 			sourceTree = "<group>";
@@ -410,6 +431,7 @@
 		6E1102D227EC7040003A6F01 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				6E3B989427ECFB38004D70B3 /* Category */,
 				6E1102FC27EC8FCE003A6F01 /* Map */,
 				6E1102D327EC704F003A6F01 /* Models */,
 			);
@@ -441,6 +463,9 @@
 			children = (
 				6E1102FE27EC9029003A6F01 /* Vehicle.h */,
 				6E1102FF27EC9029003A6F01 /* Vehicle.m */,
+				6E6A8F8D27EDB12D00CC872D /* SelectedPOI.h */,
+				6E6A8F8E27EDB12D00CC872D /* SelectedPOI.m */,
+				6E6A8F9427EDB13900CC872D /* SelectedPOI.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -479,14 +504,13 @@
 			path = UITest;
 			sourceTree = "<group>";
 		};
-		6E74155727E9848500C1C096 /* Utility */ = {
+		6E3B989427ECFB38004D70B3 /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				6ED3CF9D27E9B1A400832A01 /* Generic Codables */,
-				6E74155827E984A100C1C096 /* FNNavigator.swift */,
-				6EDEDD1927EB038500F61280 /* FNImage.swift */,
+				6E3B989527ECFB6B004D70B3 /* NSBundle+Category.h */,
+				6E3B989627ECFB6B004D70B3 /* NSBundle+Category.m */,
 			);
-			path = Utility;
+			path = Category;
 			sourceTree = "<group>";
 		};
 		6ED3CF9227E9A63100832A01 /* Services */ = {
@@ -530,6 +554,9 @@
 		6EDEDD8327EB3FF300F61280 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				6E74155827E984A100C1C096 /* FNNavigator.swift */,
+				6EDEDD1927EB038500F61280 /* FNImage.swift */,
+				6ED3CF9D27E9B1A400832A01 /* Generic Codables */,
 				6EDEDD8427EB400400F61280 /* AutoMockable.swift */,
 				6E11022127EC2B7A003A6F01 /* AccessibilityIdentifiers.swift */,
 				6E11025827EC41A2003A6F01 /* NibDefinedView.swift */,
@@ -589,7 +616,9 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E3B989727ECFB6B004D70B3 /* NSBundle+Category.h in Headers */,
 				6E1102D627EC706F003A6F01 /* POI.h in Headers */,
+				6E6A8F8F27EDB12D00CC872D /* SelectedPOI.h in Headers */,
 				6E1102A727EC4AB4003A6F01 /* MapViewController.h in Headers */,
 				6E11029527EC4A91003A6F01 /* MapView.h in Headers */,
 				6E11030027EC9029003A6F01 /* Vehicle.h in Headers */,
@@ -729,9 +758,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6EDEDD0D27EAF91C00F61280 /* VehicleCell.xib in Resources */,
+				6E6A8F9F27EDCDE400CC872D /* MessageView.xib in Resources */,
 				6EDEDD5E27EB3BBB00F61280 /* VehiclesViewController.xib in Resources */,
 				6E11023B27EC39B2003A6F01 /* taxi.gif in Resources */,
 				6E11026427EC4259003A6F01 /* LoadingView.xib in Resources */,
+				6E6A900F27EDF8EA00CC872D /* Localizable.strings in Resources */,
 				6E0EC28927E96B200037F574 /* LaunchScreen.storyboard in Resources */,
 				6E0EC28627E96B200037F574 /* Assets.xcassets in Resources */,
 			);
@@ -750,6 +781,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6E11033127ECBE7A003A6F01 /* assets.xcassets in Resources */,
+				6E6A8F9527EDB13900CC872D /* SelectedPOI.xib in Resources */,
 				6E1102A927EC4AB4003A6F01 /* MapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -849,6 +881,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E6A8FA427EDCDF100CC872D /* MessageView.swift in Sources */,
 				6EDEDD1527EAF93100F61280 /* UITableView+Extention.swift in Sources */,
 				6EDEDD9227EB428E00F61280 /* FNComponentsFactory.swift in Sources */,
 				6EDEDD7A27EB3F4600F61280 /* VehiclesFlowCordinator.swift in Sources */,
@@ -871,6 +904,7 @@
 				6E3A346127EB688100D40598 /* main.swift in Sources */,
 				6E0EC2CD27E973550037F574 /* FNApplication.swift in Sources */,
 				6ED3CFA327E9B1A400832A01 /* Generic.swift in Sources */,
+				6E6A900727EDF7D100CC872D /* StringConstants.swift in Sources */,
 				6EDEDD7F27EB3FB900F61280 /* ApplicationFlowCoordinatorDependencyProvider.swift in Sources */,
 				6EDEDD6D27EB3E4300F61280 /* FlowCordinator.swift in Sources */,
 				6E11022227EC2B7A003A6F01 /* AccessibilityIdentifiers.swift in Sources */,
@@ -912,8 +946,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E6A8F9027EDB12D00CC872D /* SelectedPOI.m in Sources */,
 				6E1102D727EC706F003A6F01 /* POI.m in Sources */,
 				6E1102A827EC4AB4003A6F01 /* MapViewController.m in Sources */,
+				6E3B989827ECFB6B004D70B3 /* NSBundle+Category.m in Sources */,
 				6E11030127EC9029003A6F01 /* Vehicle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

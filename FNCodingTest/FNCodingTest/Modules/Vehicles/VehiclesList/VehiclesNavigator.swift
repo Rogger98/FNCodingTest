@@ -10,5 +10,5 @@ import Foundation
 
 protocol VehiclesNavigatorType: AutoMockable, AnyObject {
     /// Presents the vehicles details screen
-    func showDetails(forVehicle vehicles: [PoiList])
+    func showDetails(forVehicle vehicles: [PoiList],selectedVehicle: PoiList)
 }
