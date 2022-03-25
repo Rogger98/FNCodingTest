@@ -21,7 +21,7 @@ class ApplicationFlowCoordinatorTests: XCTestCase {
         // GIVEN
         let rootViewController = UINavigationController()
         dependencyProvider.vehiclesNavigationController = rootViewController
-
+        
         // WHEN
         flowCoordinator.start()
 

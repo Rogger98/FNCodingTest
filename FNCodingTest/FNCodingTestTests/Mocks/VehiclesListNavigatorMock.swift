@@ -10,11 +10,11 @@ import XCTest
 @testable import FNCodingTest
 
 class VehiclesListNavigatorMock: VehiclesNavigatorType {
+    
+    var showDetailsForVehicles = 0
 
     //MARK: - showDetails
-
-    var showDetailsForVehicles = 0
-    func showDetails(forVehicle vehicles: [PoiList]) {
+    func showDetails(forVehicle vehicles: [PoiList], selectedVehicle: PoiList) {
         showDetailsForVehicles += 1
     }
 }

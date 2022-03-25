@@ -17,7 +17,7 @@ class VehiclesViewModelTests: FNTestCase {
     private var viewModel: VehiclesListViewModleMock!
     let dislposeBeg: DisposeBag = DisposeBag()
     override func setUp() {
-        viewModel = VehiclesListViewModleMock(vehiclesService: vehicleService)
+        viewModel = VehiclesListViewModleMock(vehiclesService: vehicleService, navigator: VehiclesListNavigatorMock())
     }
     
     func test_loadData() {

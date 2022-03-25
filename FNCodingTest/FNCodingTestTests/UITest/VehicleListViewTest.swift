@@ -14,18 +14,20 @@ class VehicleListViewTest: FNTestCase {
     
     let vehiclesNavigator = VehiclesListNavigatorMock()
     
+        
     func test_intialState() {
         // GIVEN /WHEN
         open(viewController: factory.vehiclesNavigationController(navigator: vehiclesNavigator))
         
         Page.on(VehiclesListPage.self)
-            .assertScreenTitle("VEHICLES")
+            .assertScreenTitle(StringConstants.VehicleScreen.vehicle.localized)
         
     }
     
   
-    func test_vehiclesCound() {
-        // GIVEN
+    func test_vehiclesCount() {
+        
+        
         
     }
     

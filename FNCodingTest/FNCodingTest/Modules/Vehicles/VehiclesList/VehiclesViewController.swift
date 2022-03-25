@@ -46,8 +46,7 @@ class VehiclesViewController: BaseViewController {
     
     private func setupUI() {
         view.accessibilityIdentifier = AccessibilityIdentifiers.VehicleList.rootViewId
-        tableViewVehicles.accessibilityIdentifier = AccessibilityIdentifiers.VehicleList.tableViewId
-        //title = "VEHICLES"
+        tableViewVehicles.accessibilityIdentifier = AccessibilityIdentifiers.VehicleList.tableViewId        
         title = StringConstants.VehicleScreen.vehicle.localized
         self.navigationItem.rightBarButtonItem = refreshButton
         tableViewVehicles.registerCell(VehicleCell.self)

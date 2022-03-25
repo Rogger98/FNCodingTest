@@ -14,7 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic) CLLocationCoordinate2D coordinate;
 @property (nonatomic, nullable) NSString *type;
--(id)initWithCoordinates:(CLLocationCoordinate2D) coordinates andName:(NSString*)type;
+@property (nonatomic) float head;
+-(id)initWithCoordinates:(CLLocationCoordinate2D) coordinates andName:(NSString*)type andHead:(NSString*)head;
 @end
 
 NS_ASSUME_NONNULL_END

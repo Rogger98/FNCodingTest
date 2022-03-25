@@ -17,12 +17,13 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 @interface POI : NSObject
-@property (weak, nonatomic)NSString* identity;
+@property (nonatomic)NSString* identity;
 @property (weak, nonatomic)NSString* state;
 @property (weak, nonatomic)NSString* type;
-@property (weak, nonatomic)NSString* heading;
+@property (nonatomic)NSString* heading;
 @property (nonatomic)CLLocationCoordinate2D location;
 -(instancetype)init:(NSString *)identity poiState:(NSString *)state poiType:(NSString *)type poiHeading:(NSString *)heading  poiLocation:(CLLocationCoordinate2D)location;
+-(NSString *)description;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -37,6 +37,6 @@ extension Router {
         switch self {
         case .getVehicles:
             return .get
-        }
+        }        
     }
 }
