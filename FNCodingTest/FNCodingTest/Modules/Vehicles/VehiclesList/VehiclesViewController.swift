@@ -8,7 +8,7 @@
 import UIKit
 import RxSwift
 
-class VehiclesViewController: BaseViewController {
+final class VehiclesViewController: BaseViewController {
 
     // MARK: - Outlets
     @IBOutlet private var tableViewVehicles: UITableView!
@@ -46,7 +46,8 @@ class VehiclesViewController: BaseViewController {
     
     private func setupUI() {
         view.accessibilityIdentifier = AccessibilityIdentifiers.VehicleList.rootViewId
-        tableViewVehicles.accessibilityIdentifier = AccessibilityIdentifiers.VehicleList.tableViewId        
+        tableViewVehicles.accessibilityIdentifier = AccessibilityIdentifiers.VehicleList.tableViewId
+        refreshButton.accessibilityIdentifier = AccessibilityIdentifiers.VehicleList.refreshButton
         title = StringConstants.VehicleScreen.screenTitle.localized
         self.navigationItem.rightBarButtonItem = refreshButton
         tableViewVehicles.registerCell(VehicleCell.self)

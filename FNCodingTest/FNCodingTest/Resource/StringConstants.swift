@@ -23,6 +23,7 @@ extension StringLocalizable where Self: RawRepresentable, Self.RawValue == Strin
     }
 }
 
+/// `StringConstants` takes the responsblity of Localisation to avoid the raw strings.
 struct StringConstants {
 
     enum Common: String, StringLocalizable {

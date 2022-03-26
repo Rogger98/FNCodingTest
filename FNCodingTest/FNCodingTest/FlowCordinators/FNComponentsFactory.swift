@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+
 /// The ApplicationComponentsFactory takes responsibity of creating application components and establishing dependencies between them.
 final class ApplicationComponentsFactory {
     fileprivate var servicesProvider: VehicleListAPIProtocol

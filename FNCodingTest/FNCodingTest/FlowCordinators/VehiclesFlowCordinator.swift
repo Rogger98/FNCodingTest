@@ -8,7 +8,7 @@
 import UIKit
 import CoreLocation
 
-/// The `VehiclesFlowCordinator` takes control over the flows on the movies search screen
+/// The `VehiclesFlowCordinator` takes control over the flows on the Vehicle list screen
 class VehiclesFlowCordinator: FlowCoordinator {
     fileprivate let window: UIWindow
     fileprivate var vehicleNavigationController: UINavigationController?
@@ -48,4 +48,13 @@ extension VehiclesFlowCordinator: VehiclesNavigatorType {
         
     }
     
+    func showMap(data: [POI],selectedPOI:POI) {
+        let mapController = MapViewController(data,screenTitle: StringConstants.MapScreen.screenTitle.localized, selectedPOI: selectedPOI)
+        mapController.navigationItem.title = ""
+        mapController.selectedVehicle = { selectedPoi in
+            let message = "Message displayed from swift code Selected POI \(selectedPoi.description)"
+            self.vehicleNavigationController?.showAlertWith(messsage: message , theam: .appName)
+        }
+        vehicleNavigationController?.pushViewController(mapController, animated: true)
+    }
 }

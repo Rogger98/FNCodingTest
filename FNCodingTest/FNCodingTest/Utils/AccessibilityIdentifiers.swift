@@ -13,6 +13,14 @@ public struct AccessibilityIdentifiers {
         public static let rootViewId = "\(VehicleList.self).rootViewId"
         public static let tableViewId = "\(VehicleList.self).tableViewId"
         public static let cellId = "\(VehicleList.self).cellId"
+        public static let refreshButton = "\(VehicleList.self).refreshButton"
     }
     
+    public struct MessageView {
+        public static let messageViewId = "\(MessageView.self).messageViewId"
+    }
+    
+    public struct LoadingView {
+        public static let loadinViewId = "\(LoadingView.self).loadinViewId"
+    }
 }

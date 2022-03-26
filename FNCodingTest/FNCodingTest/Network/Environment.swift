@@ -8,6 +8,7 @@
 import Foundation
 
 
+/// `Environment` takes the responsblity of Application environment for all library, webservices.
 struct Environment {
     
     

@@ -1,5 +1,5 @@
 //
-//  Vehicle.h
+//  VehicleAnnotation.h
 //  MapView
 //
 //  Created by psagc on 24/03/22.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Vehicle : NSObject<MKAnnotation>
+@interface VehicleAnnotation : NSObject<MKAnnotation>
 
 @property (nonatomic) CLLocationCoordinate2D coordinate;
 @property (nonatomic, nullable) NSString *type;

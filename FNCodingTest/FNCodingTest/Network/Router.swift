@@ -8,6 +8,7 @@
 import Foundation
 import Alamofire
 
+/// The `APIRouter` protocol defines webservices to confirm the protocal for calling webservice.
 protocol APIRouter {
     var path: String { get  }
     var methodType : HTTPMethod { get }

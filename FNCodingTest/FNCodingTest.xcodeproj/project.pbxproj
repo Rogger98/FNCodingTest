@@ -13,7 +13,6 @@
 		6E0EC28927E96B200037F574 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E0EC28727E96B200037F574 /* LaunchScreen.storyboard */; };
 		6E0EC2B427E9704D0037F574 /* FNAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0EC2B327E9704D0037F574 /* FNAppDelegate.swift */; };
 		6E0EC2CD27E973550037F574 /* FNApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0EC2CC27E973550037F574 /* FNApplication.swift */; };
-		6E0EC2E927E9761E0037F574 /* UIStoryboard+Extention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0EC2E827E9761E0037F574 /* UIStoryboard+Extention.swift */; };
 		6E0EC2EF27E97AB30037F574 /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0EC2EE27E97AB30037F574 /* WebService.swift */; };
 		6E0EC2F927E97AD30037F574 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0EC2F827E97AD30037F574 /* Router.swift */; };
 		6E0EC30627E97D4A0037F574 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E0EC30527E97D4A0037F574 /* Environment.swift */; };
@@ -42,8 +41,8 @@
 		6E1102A927EC4AB4003A6F01 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E1102A627EC4AB4003A6F01 /* MapViewController.xib */; };
 		6E1102D627EC706F003A6F01 /* POI.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E1102D427EC706F003A6F01 /* POI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E1102D727EC706F003A6F01 /* POI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1102D527EC706F003A6F01 /* POI.m */; };
-		6E11030027EC9029003A6F01 /* Vehicle.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E1102FE27EC9029003A6F01 /* Vehicle.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E11030127EC9029003A6F01 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1102FF27EC9029003A6F01 /* Vehicle.m */; };
+		6E11030027EC9029003A6F01 /* VehicleAnnotation.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E1102FE27EC9029003A6F01 /* VehicleAnnotation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E11030127EC9029003A6F01 /* VehicleAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E1102FF27EC9029003A6F01 /* VehicleAnnotation.m */; };
 		6E11033127ECBE7A003A6F01 /* assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6E11033027ECBE7A003A6F01 /* assets.xcassets */; };
 		6E3A341727EB546500D40598 /* FNFlowCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3A341627EB546500D40598 /* FNFlowCoordinatorTests.swift */; };
 		6E3A342027EB589D00D40598 /* PoiService.json in Resources */ = {isa = PBXBuildFile; fileRef = 6E3A341F27EB589D00D40598 /* PoiService.json */; };
@@ -53,8 +52,8 @@
 		6E3A346127EB688100D40598 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E3A346027EB688100D40598 /* main.swift */; };
 		6E3B989727ECFB6B004D70B3 /* NSBundle+Category.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E3B989527ECFB6B004D70B3 /* NSBundle+Category.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E3B989827ECFB6B004D70B3 /* NSBundle+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E3B989627ECFB6B004D70B3 /* NSBundle+Category.m */; };
-		6E6A8F8F27EDB12D00CC872D /* SelectedPOI.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E6A8F8D27EDB12D00CC872D /* SelectedPOI.h */; };
-		6E6A8F9027EDB12D00CC872D /* SelectedPOI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6A8F8E27EDB12D00CC872D /* SelectedPOI.m */; };
+		6E6A8F8F27EDB12D00CC872D /* SelectedPOIView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E6A8F8D27EDB12D00CC872D /* SelectedPOIView.h */; };
+		6E6A8F9027EDB12D00CC872D /* SelectedPOIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E6A8F8E27EDB12D00CC872D /* SelectedPOIView.m */; };
 		6E6A8F9527EDB13900CC872D /* SelectedPOI.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E6A8F9427EDB13900CC872D /* SelectedPOI.xib */; };
 		6E6A8F9F27EDCDE400CC872D /* MessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E6A8F9E27EDCDE400CC872D /* MessageView.xib */; };
 		6E6A8FA427EDCDF100CC872D /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E6A8FA327EDCDF100CC872D /* MessageView.swift */; };
@@ -147,7 +146,6 @@
 		6E0EC29527E96B200037F574 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6E0EC2B327E9704D0037F574 /* FNAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNAppDelegate.swift; sourceTree = "<group>"; };
 		6E0EC2CC27E973550037F574 /* FNApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNApplication.swift; sourceTree = "<group>"; };
-		6E0EC2E827E9761E0037F574 /* UIStoryboard+Extention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extention.swift"; sourceTree = "<group>"; };
 		6E0EC2EE27E97AB30037F574 /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		6E0EC2F827E97AD30037F574 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		6E0EC30527E97D4A0037F574 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
@@ -177,8 +175,8 @@
 		6E1102AD27EC4DE1003A6F01 /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 		6E1102D427EC706F003A6F01 /* POI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = POI.h; sourceTree = "<group>"; };
 		6E1102D527EC706F003A6F01 /* POI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = POI.m; sourceTree = "<group>"; };
-		6E1102FE27EC9029003A6F01 /* Vehicle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
-		6E1102FF27EC9029003A6F01 /* Vehicle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
+		6E1102FE27EC9029003A6F01 /* VehicleAnnotation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VehicleAnnotation.h; sourceTree = "<group>"; };
+		6E1102FF27EC9029003A6F01 /* VehicleAnnotation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehicleAnnotation.m; sourceTree = "<group>"; };
 		6E11033027ECBE7A003A6F01 /* assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = assets.xcassets; sourceTree = "<group>"; };
 		6E3A341627EB546500D40598 /* FNFlowCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FNFlowCoordinatorTests.swift; sourceTree = "<group>"; };
 		6E3A341F27EB589D00D40598 /* PoiService.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = PoiService.json; sourceTree = "<group>"; };
@@ -188,8 +186,8 @@
 		6E3A346027EB688100D40598 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		6E3B989527ECFB6B004D70B3 /* NSBundle+Category.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSBundle+Category.h"; sourceTree = "<group>"; };
 		6E3B989627ECFB6B004D70B3 /* NSBundle+Category.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+Category.m"; sourceTree = "<group>"; };
-		6E6A8F8D27EDB12D00CC872D /* SelectedPOI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectedPOI.h; sourceTree = "<group>"; };
-		6E6A8F8E27EDB12D00CC872D /* SelectedPOI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectedPOI.m; sourceTree = "<group>"; };
+		6E6A8F8D27EDB12D00CC872D /* SelectedPOIView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectedPOIView.h; sourceTree = "<group>"; };
+		6E6A8F8E27EDB12D00CC872D /* SelectedPOIView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectedPOIView.m; sourceTree = "<group>"; };
 		6E6A8F9427EDB13900CC872D /* SelectedPOI.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectedPOI.xib; sourceTree = "<group>"; };
 		6E6A8F9E27EDCDE400CC872D /* MessageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageView.xib; sourceTree = "<group>"; };
 		6E6A8FA327EDCDF100CC872D /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
@@ -350,7 +348,6 @@
 		6E0EC2B227E96E270037F574 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
-				6E0EC2E827E9761E0037F574 /* UIStoryboard+Extention.swift */,
 				6E9EEB1027EED38F0094832E /* UIViewController+Extention.swift */,
 				6EDEDD1427EAF93100F61280 /* UITableView+Extention.swift */,
 				6EDEDD1E27EB03F700F61280 /* UIImageView+Extention.swift */,
@@ -464,10 +461,10 @@
 		6E1102FD27EC8FF3003A6F01 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				6E1102FE27EC9029003A6F01 /* Vehicle.h */,
-				6E1102FF27EC9029003A6F01 /* Vehicle.m */,
-				6E6A8F8D27EDB12D00CC872D /* SelectedPOI.h */,
-				6E6A8F8E27EDB12D00CC872D /* SelectedPOI.m */,
+				6E1102FE27EC9029003A6F01 /* VehicleAnnotation.h */,
+				6E1102FF27EC9029003A6F01 /* VehicleAnnotation.m */,
+				6E6A8F8D27EDB12D00CC872D /* SelectedPOIView.h */,
+				6E6A8F8E27EDB12D00CC872D /* SelectedPOIView.m */,
 				6E6A8F9427EDB13900CC872D /* SelectedPOI.xib */,
 			);
 			path = View;
@@ -621,10 +618,10 @@
 			files = (
 				6E3B989727ECFB6B004D70B3 /* NSBundle+Category.h in Headers */,
 				6E1102D627EC706F003A6F01 /* POI.h in Headers */,
-				6E6A8F8F27EDB12D00CC872D /* SelectedPOI.h in Headers */,
+				6E6A8F8F27EDB12D00CC872D /* SelectedPOIView.h in Headers */,
 				6E1102A727EC4AB4003A6F01 /* MapViewController.h in Headers */,
 				6E11029527EC4A91003A6F01 /* MapView.h in Headers */,
-				6E11030027EC9029003A6F01 /* Vehicle.h in Headers */,
+				6E11030027EC9029003A6F01 /* VehicleAnnotation.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -896,7 +893,6 @@
 				6E0EC2EF27E97AB30037F574 /* WebService.swift in Sources */,
 				6E0EC30627E97D4A0037F574 /* Environment.swift in Sources */,
 				6EDEDD8D27EB402500F61280 /* VehiclesNavigator.swift in Sources */,
-				6E0EC2E927E9761E0037F574 /* UIStoryboard+Extention.swift in Sources */,
 				6E0EC2B427E9704D0037F574 /* FNAppDelegate.swift in Sources */,
 				6ED3CF9427E9A64800832A01 /* VehiclesListServices.swift in Sources */,
 				6EDEDD5D27EB3BBB00F61280 /* VehiclesViewController.swift in Sources */,
@@ -950,11 +946,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E6A8F9027EDB12D00CC872D /* SelectedPOI.m in Sources */,
+				6E6A8F9027EDB12D00CC872D /* SelectedPOIView.m in Sources */,
 				6E1102D727EC706F003A6F01 /* POI.m in Sources */,
 				6E1102A827EC4AB4003A6F01 /* MapViewController.m in Sources */,
 				6E3B989827ECFB6B004D70B3 /* NSBundle+Category.m in Sources */,
-				6E11030127EC9029003A6F01 /* Vehicle.m in Sources */,
+				6E11030127EC9029003A6F01 /* VehicleAnnotation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1127,6 +1123,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FNCodingTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1148,6 +1145,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FNCodingTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

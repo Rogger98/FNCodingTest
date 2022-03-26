@@ -7,6 +7,7 @@
 
 import UIKit
 
+/// `FNApplication` takes responsibility about setup library and intial setups of application.
 class FNApplication {
     
     /// setup All library and routing stuff

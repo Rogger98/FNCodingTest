@@ -31,6 +31,8 @@ class BaseViewController: UIViewController {
     }
     
     func setupUIElements () {
+        messageView.accessibilityIdentifier = AccessibilityIdentifiers.MessageView.messageViewId
+        loadingView.accessibilityIdentifier = AccessibilityIdentifiers.LoadingView.loadinViewId
         loadingView.isHidden = true
         loadingView.setLoadingMessage(message: StringConstants.VehicleScreen.loadingMessage.localized)
         loadingView.addAndFillSuperview(view)
@@ -67,7 +69,7 @@ class BaseViewController: UIViewController {
     private func getErrorMessage(error: WebError) -> (title: String,message: String, image: FNImages){
         switch error {
         case .backendError(let ressponse):
-            return (ressponse.error, ressponse.message, .error)
+            return (ressponse.error?.stringValue ?? "", ressponse.message?.stringValue ?? "", .error)
         case .decodingFailed:
             return (StringConstants.Common.serverError.localized, StringConstants.Common.serverError.localized, .error)
         case .networkError(let networkError):

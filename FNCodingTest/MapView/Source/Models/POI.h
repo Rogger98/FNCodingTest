@@ -10,11 +10,6 @@
 NS_ASSUME_NONNULL_BEGIN
 
 
-@interface POILocation : NSObject
-@property (weak, nonatomic)NSDecimalNumber* lat;
-@property (weak, nonatomic)NSDecimalNumber* lon;
--(instancetype)init:(NSDecimalNumber*)lat longtitude:(NSDecimalNumber*)lon;
-@end
 
 @interface POI : NSObject
 @property (nonatomic)NSString* identity;

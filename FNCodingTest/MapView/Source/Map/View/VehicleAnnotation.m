@@ -1,15 +1,15 @@
 //
-//  Vehicle.m
+//  VehicleAnnotation.m
 //  MapView
 //
 //  Created by psagc on 24/03/22.
 //
 
-#import "Vehicle.h"
+#import "VehicleAnnotation.h"
 #import <Foundation/Foundation.h>
 #import <MapKit/MapKit.h>
 
-@implementation Vehicle
+@implementation VehicleAnnotation
 -(id)initWithCoordinates:(CLLocationCoordinate2D) coordinates andName:(NSString*)type andHead:(NSString*)head andIdentity:(NSString*)identity
 {
     self = [super init];

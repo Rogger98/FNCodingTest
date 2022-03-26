@@ -8,18 +8,22 @@
 import Alamofire
 import Foundation
 
+/// `APIResult` takes the responsblity of web service response.
 enum APIResult<T> {
     case success(T)
     case error(WebError)
 }
 
+/// `ResponseError` defines the back-end error from webservices.
 struct ResponseError : Decodable {
-    var timestamp: String
-    var status: Int
-    var error: String
-    var message : String
-    var path : String
+    var timestamp: Generic?
+    var status: Generic?
+    var error: Generic?
+    var message : Generic?
+    var path : Generic?
 }
+
+/// `WebError` defines the web services error.
 enum WebError {
     case backendError(ResponseError)
     case decodingFailed
@@ -29,6 +33,7 @@ enum WebError {
 }
 
 
+/// `WebServics` takes the responsblity of calling web services.
 final class WebServics: Session {
     
     /// Shared instance for Web service call's
@@ -68,4 +73,4 @@ final class WebServics: Session {
         
     }
 }
-// https://poi-api.mytaxi.com/PoiService/poi/v1?p2Lat=53.394655&p1Lon=9.757589&p1Lat=53.694865&p2Lon=10.099891
+

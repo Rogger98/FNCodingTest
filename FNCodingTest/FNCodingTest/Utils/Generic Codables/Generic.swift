@@ -7,6 +7,8 @@
 
 import Foundation
 
+/// `Generic` takes the responsblity for avoid the data parsing crashes it decode value and it can be used as any data type at unwrape time
+
 struct Generic: Codable {
     let value: Any
     

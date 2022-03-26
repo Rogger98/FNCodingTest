@@ -12,9 +12,9 @@ import UIKit
 protocol ApplicationFlowCoordinatorDependencyProvider: VehiclesFlowCoordinatorDependencyProvider {}
 
 protocol VehiclesFlowCoordinatorDependencyProvider: class {
-    /// Creates UIViewController to search for a movie
+    /// Creates UIViewController to show vehicle Listing
     func vehiclesNavigationController(navigator: VehiclesNavigatorType) -> UINavigationController
 
-    // Creates UIViewController to show the details of the movie with specified identifier
+    // Creates UIViewController to show the details of the poi.
     func vehiclesDetails(_ vehicles: [PoiList]) -> UIViewController
 }
