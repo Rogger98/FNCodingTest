@@ -31,35 +31,33 @@
     return self;
 }
 
+#pragma mark Lyfe Cycle
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     [self setupUI];
     
 }
+
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self showSelectedCar:[self selectedPOI]];
+}
+
 -(void)setupUI{
     [[self mapView] setDelegate:self];
     [self setTitle:[self mapViewTitle]];
     [[self mapView] setShowsUserLocation:YES];
     [[self mapView] setMapType:MKMapTypeStandard];
     for(POI* poiVehicle in [self mapData]) {
-        Vehicle *vehicle = [[Vehicle alloc] initWithCoordinates:[poiVehicle location] andName:[poiVehicle type] andHead:[poiVehicle heading]];
+        Vehicle *vehicle = [[Vehicle alloc] initWithCoordinates:[poiVehicle location] andName:[poiVehicle type] andHead:[poiVehicle heading] andIdentity:[poiVehicle identity]];
          
         [[self mapView] addAnnotation:vehicle];
     }
     [[self mapView] showAnnotations:self.mapView.annotations animated:YES];
-    
-    SelectedPOI *selectedPoi = [[SelectedPOI alloc] init:[self selectedPOI]];
-    CGFloat yFrame = [[UIScreen mainScreen] bounds].size.height;
-    CGFloat width = [[UIScreen mainScreen] bounds].size.width;
-    [selectedPoi setFrame:CGRectMake(0, yFrame, width, 120)];
-    [[self view] addSubview:selectedPoi];
-    [UIView animateWithDuration:0.30 animations:^{
-        [selectedPoi setFrame:CGRectMake(0, yFrame - 120, width, 120)];
-    }];
-    
 }
 
+#pragma mark Map Delegates
 -(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation {
     if([annotation isKindOfClass:[Vehicle self]]) {
         Vehicle *vehicle = (Vehicle*)annotation;
@@ -75,9 +73,27 @@
     
     if([view.annotation isKindOfClass:[Vehicle self]]) {
         Vehicle *vehicle = (Vehicle*)view.annotation;
-        self.selectedVehicle([[self mapData] objectAtIndex:0]);
+        for (POI* poi in [self mapData]) {
+            if ([[poi identity] isEqualToString:vehicle.identity]) {
+                self.selectedVehicle(poi);
+                [self showSelectedCar:poi];
+                break;
+            }
+        }
         [[self mapView] deselectAnnotation:view.annotation animated:NO];
     }
     
+}
+
+#pragma mark Helper Methods
+-(void)showSelectedCar:(POI*)poi{
+    SelectedPOI *selectedPoi = [[SelectedPOI alloc] init:poi];
+    CGFloat yFrame = [[UIScreen mainScreen] bounds].size.height;
+    CGFloat width = [[UIScreen mainScreen] bounds].size.width;
+    [selectedPoi setFrame:CGRectMake(0, yFrame, width, 120)];
+    [[self view] addSubview:selectedPoi];
+    [UIView animateWithDuration:0.30 animations:^{
+        [selectedPoi setFrame:CGRectMake(0, yFrame - 120, width, 120)];
+    }];
 }
 @end

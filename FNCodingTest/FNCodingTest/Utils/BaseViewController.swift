@@ -49,6 +49,7 @@ class BaseViewController: UIViewController {
                     self.messageView.showWith(header: errorMessage.title, message: errorMessage.message, image: errorMessage.image)
                 case .success(let data):
                     print("Success")
+                    messageView.isHidden = true
                     loadingView.isHidden = true
                     if !data {
                         self.messageView.showWith(header: StringConstants.Common.sorry.localized, message: StringConstants.VehicleScreen.noVehiclesAvailable.localized, image: .location)

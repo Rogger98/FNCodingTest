@@ -53,7 +53,7 @@
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="Lhn-7i-izW" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="1oY-4l-hWy"/>
                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="mar-g7-tg5" secondAttribute="bottom" constant="10" id="NWO-4Z-crz"/>
@@ -72,9 +72,6 @@
     </objects>
     <resources>
         <image name="ic_text" width="800" height="600"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemGray3Color">
             <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

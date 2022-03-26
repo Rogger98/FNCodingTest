@@ -39,10 +39,23 @@ struct StringConstants {
     }
     
     enum VehicleScreen : String, StringLocalizable {
-        case vehicle
+        case screenTitle
         case loadingMessage
         case noVehiclesAvailable
         static var prefix: String { return "VehicleScreen" }
     }
+    
+    enum MapScreen: String, StringLocalizable {
+        case screenTitle
+        static var prefix: String { return "MapScreen" }
+    }
+    
+    enum AlertTitles: String, StringLocalizable {
+        case error
+        case success
+        case appName
+        static var prefix: String { return "AlertTitles"}
+    }
+    
     
 }

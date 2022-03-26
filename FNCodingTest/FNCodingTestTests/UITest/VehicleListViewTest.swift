@@ -20,7 +20,7 @@ class VehicleListViewTest: FNTestCase {
         open(viewController: factory.vehiclesNavigationController(navigator: vehiclesNavigator))
         
         Page.on(VehiclesListPage.self)
-            .assertScreenTitle(StringConstants.VehicleScreen.vehicle.localized)
+            .assertScreenTitle(StringConstants.VehicleScreen.screenTitle.localized)
         
     }
     

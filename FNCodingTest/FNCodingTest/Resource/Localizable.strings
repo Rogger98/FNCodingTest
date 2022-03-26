@@ -2,7 +2,7 @@
 
 // Vehicle Screen
 
-"VehicleScreen.vehicle" = "VEHICLE";
+"VehicleScreen.screenTitle" = "VEHICLE";
 "VehicleScreen.loadingMessage" = "Please wait we are getting vehicles for you..";
 
 "VehicleScreen.noVehiclesAvailable" = "☹️ Sorry, No vehicles available near by your location. We are will try our best to provide service to your location.";
@@ -15,3 +15,15 @@
 "Common.serverErrorDescription" = "☹️ Sorry, Something went worng please restart app and try again or contact on XXXXXXXXXX.";
 "Common.noInternet" = "No Internet";
 "Common.noInternetDescription" = "Please connect to internet to get vehicle.";
+"Common.ok" = "Ok";
+
+
+// AlertTitles
+
+"AlertTitles.error" = "Error";
+"AlertTitles.Success" = "Success";
+"AlertTitles.appName" = "FNCodingTest";
+
+
+// Map Screen
+"MapScreen.screenTitle" = "POI Vehicles";

@@ -15,6 +15,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, nullable) POI* selectedPOI;
 @property (weak, nonatomic) IBOutlet UILabel *lablePOIIdentity;
 @property (weak, nonatomic) IBOutlet UILabel *lablePOIType;
+-(void)changePOIdetails:(POI*)poi;
 @end
 
 NS_ASSUME_NONNULL_END

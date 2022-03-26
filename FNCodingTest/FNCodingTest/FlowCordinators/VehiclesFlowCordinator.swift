@@ -38,10 +38,11 @@ extension VehiclesFlowCordinator: VehiclesNavigatorType {
             return poi
         }
         
-        let mapController = MapViewController(data,screenTitle: "POI Vehicles", selectedPOI: selected)
+        let mapController = MapViewController(data,screenTitle: StringConstants.MapScreen.screenTitle.localized, selectedPOI: selected)
         mapController.navigationItem.title = ""
         mapController.selectedVehicle = { selectedPoi in
-            print(selectedPoi.description)
+            let message = "Message displayed from swift code Selected POI \(selectedPoi.description)"
+            self.vehicleNavigationController?.showAlertWith(messsage: message , theam: .appName)
         }
         vehicleNavigationController?.pushViewController(mapController, animated: true)
         

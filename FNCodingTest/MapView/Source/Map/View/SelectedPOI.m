@@ -28,7 +28,13 @@
     return self;
 }
 -(void)willMoveToWindow:(UIWindow *)newWindow {
+    [self setBackgroundColor:[UIColor whiteColor]];
     [[self lablePOIIdentity] setText:[[self selectedPOI] identity]];
     [[self lablePOIType] setText:[[self selectedPOI] type]];
+}
+
+-(void)changePOIdetails:(POI*)poi {
+    [[self lablePOIIdentity] setText:[poi identity]];
+    [[self lablePOIType] setText:[poi type]];
 }
 @end
