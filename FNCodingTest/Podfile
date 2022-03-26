@@ -1,0 +1,27 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+def shared
+  pod "RxSwift"
+  pod "RxCocoa"
+  pod "RxGesture"
+end
+
+
+target 'FNCodingTest' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+  shared
+  pod "Alamofire"
+  
+  # Pods for FNCodingTest
+
+  target 'FNCodingTestTests' do
+    inherit! :search_paths
+    # Pods for testing
+    shared
+    pod "EarlGrey"
+  end
+
+
+end
